@@ -11,6 +11,7 @@
 		933E23BB2A97CA5A0047DB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E23BA2A97CA5A0047DB04 /* ContentView.swift */; };
 		933E23BD2A97CA5C0047DB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933E23BC2A97CA5C0047DB04 /* Assets.xcassets */; };
 		933E23C02A97CA5C0047DB04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933E23BF2A97CA5C0047DB04 /* Preview Assets.xcassets */; };
+		933E23C82A97D0660047DB04 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933E23C72A97D0660047DB04 /* ColorAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		933E23BA2A97CA5A0047DB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		933E23BC2A97CA5C0047DB04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		933E23BF2A97CA5C0047DB04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		933E23C72A97D0660047DB04 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				933E23B82A97CA5A0047DB04 /* QRCodeReader_SwiftUiApp.swift */,
 				933E23BA2A97CA5A0047DB04 /* ContentView.swift */,
 				933E23BC2A97CA5C0047DB04 /* Assets.xcassets */,
+				933E23C72A97D0660047DB04 /* ColorAssets.xcassets */,
 				933E23BE2A97CA5C0047DB04 /* Preview Content */,
 			);
 			path = "QRCodeReader-SwiftUi";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933E23C02A97CA5C0047DB04 /* Preview Assets.xcassets in Resources */,
+				933E23C82A97D0660047DB04 /* ColorAssets.xcassets in Resources */,
 				933E23BD2A97CA5C0047DB04 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +279,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +309,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
