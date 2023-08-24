@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  QRCodeReader-SwiftUi
 //
-//  Created by Roro Solutions LLP on 24/08/23.
+//  Created by Gaurav Tak on 24/08/23.
 //
 
 import SwiftUI
