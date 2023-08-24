@@ -9,12 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("qr_code").resizable().frame(width:100, height: 100)
-            Text("QR Reader Demo").font(.system(size: 24)).foregroundColor(Color.black)
-            Text("please tap bottom button for NFC card/tag scanning").padding(.top, 8).font(.system(size: 14)).foregroundColor(Color.black)
-        }
-        .padding()
+       HomeView()
     }
 }
 
