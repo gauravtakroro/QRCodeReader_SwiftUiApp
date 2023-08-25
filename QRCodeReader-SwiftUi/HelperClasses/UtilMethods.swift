@@ -11,8 +11,6 @@ import UIKit
 
 struct UtilMethods {
     
-    static var isRotateEnabled = true
-    
     static func toggleTorch(torchOn: Bool) {
         guard let device = AVCaptureDevice.default(for: .video) else { return }
         

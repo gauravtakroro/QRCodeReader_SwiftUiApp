@@ -9,6 +9,9 @@ import SwiftUI
 import AVFoundation
 
 struct QRCodeScanView: View {
+    private let rotationChangePublisher = NotificationCenter.default
+           .publisher(for: UIDevice.orientationDidChangeNotification)
+    @State private var isOrientationLocked = true
     
     @StateObject var viewModel: QRCodeScanViewModel
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
@@ -90,6 +93,15 @@ struct QRCodeScanView: View {
             viewModel.showQRCoddeValueBottomView = true
             print("Scanned qrCodeValue------> \(viewModel.qrCodeValue)")
         })
+        .onReceive(rotationChangePublisher) { _ in
+            // This is called when there is a orientation change
+            // You can set back the orientation to the one you like even
+            // if the user has turned around their phone to use another
+            // orientation.
+            if isOrientationLocked {
+                changeOrientation(to: .portrait)
+            }
+        }
         .ignoresSafeArea()
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
@@ -121,6 +133,12 @@ struct QRCodeScanView: View {
         default:
             return AnyView(EmptyView())
         }
+    }
+    
+    func changeOrientation(to orientation: UIInterfaceOrientation) {
+        // tell the app to change the orientation
+        UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
+        print("Changing to", orientation.isPortrait ? "Portrait" : "Landscape")
     }
 }
 
