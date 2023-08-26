@@ -47,7 +47,7 @@ struct QRCodeScanView: View {
                     .foregroundColor(Color.white)
                     .font(.system(size: 24))
                     .padding(.top, 20)
-                if viewModel.showQRCoddeValueBottomView {
+                if viewModel.showQRCodeValueBottomView {
                     Spacer()
                     VStack {
                         Text("Scanned QR Code Value").foregroundColor(Color.black).padding(.top, 20)
@@ -69,7 +69,7 @@ struct QRCodeScanView: View {
                             }
                             Spacer()
                             Button {
-                                viewModel.showQRCoddeValueBottomView = false
+                                viewModel.showQRCodeValueBottomView = false
                             } label: {
                                 Image("x_icon").resizable().frame(width: 16, height: 16)
                             }.frame(alignment: .trailing).padding(.trailing, 24)
@@ -90,7 +90,7 @@ struct QRCodeScanView: View {
             UtilMethods.toggleTorch(torchOn: false)
         })
         .onChange(of: viewModel.qrCodeValue, perform: { _ in
-            viewModel.showQRCoddeValueBottomView = true
+            viewModel.showQRCodeValueBottomView = true
             print("Scanned qrCodeValue------> \(viewModel.qrCodeValue)")
         })
         .onReceive(rotationChangePublisher) { _ in

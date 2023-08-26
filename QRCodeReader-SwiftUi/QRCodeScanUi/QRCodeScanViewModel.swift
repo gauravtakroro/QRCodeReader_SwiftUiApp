@@ -15,7 +15,7 @@ protocol QRCodeScanViewModelProtocol: ObservableObject {
     var qrScanFrameManager: QRScanFrameManager { get set }
     var torchOn: Bool { get set }
     var qrCodeValue: String { get set }
-    var showQRCoddeValueBottomView: Bool { get set }
+    var showQRCodeValueBottomView: Bool { get set }
     func setupSubscriptions()
     func startQRCodeScanSession()
     func stopQRCodeScanSession()
@@ -25,7 +25,7 @@ class QRCodeScanViewModel: QRCodeScanViewModelProtocol {
     @Published var torchOn: Bool = false
     @Published var frame: CGImage?
     @Published var qrCodeValue: String = ""
-    @Published var showQRCoddeValueBottomView: Bool = false
+    @Published var showQRCodeValueBottomView: Bool = false
     internal var qrScanFrameManager = QRScanFrameManager()
     
     init() {
