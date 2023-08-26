@@ -74,7 +74,7 @@ struct QRCodeScanView: View {
                                 Image("x_icon").resizable().frame(width: 16, height: 16)
                             }.frame(alignment: .trailing).padding(.trailing, 24)
                             
-                        }.padding(.bottom, 20).padding(.horizontal, 12).frame(width: UIScreen.main.bounds.width)
+                        }.padding(.bottom, 36).padding(.horizontal, 12).frame(width: UIScreen.main.bounds.width)
                     }.background(Color.white).frame( maxHeight: .infinity, alignment: .bottom)
                 }
             }
