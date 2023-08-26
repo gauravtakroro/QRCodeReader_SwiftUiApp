@@ -21,6 +21,7 @@
 		933E23DA2A97E17A0047DB04 /* FlashLightScanImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E23D92A97E17A0047DB04 /* FlashLightScanImageView.swift */; };
 		933E23DD2A97E3840047DB04 /* UtilMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E23DC2A97E3840047DB04 /* UtilMethods.swift */; };
 		933E23DF2A97E4FA0047DB04 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E23DE2A97E4FA0047DB04 /* View+Extension.swift */; };
+		93C0D49A2A99D666008B17CA /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0D4992A99D666008B17CA /* Notification+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		933E23D92A97E17A0047DB04 /* FlashLightScanImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashLightScanImageView.swift; sourceTree = "<group>"; };
 		933E23DC2A97E3840047DB04 /* UtilMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilMethods.swift; sourceTree = "<group>"; };
 		933E23DE2A97E4FA0047DB04 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		93C0D4992A99D666008B17CA /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				933E23DC2A97E3840047DB04 /* UtilMethods.swift */,
 				933E23DE2A97E4FA0047DB04 /* View+Extension.swift */,
+				93C0D4992A99D666008B17CA /* Notification+Extension.swift */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				933E23CC2A97D39E0047DB04 /* HomeView.swift in Sources */,
 				933E23D82A97E0A30047DB04 /* AppQRCodeScannerView.swift in Sources */,
+				93C0D49A2A99D666008B17CA /* Notification+Extension.swift in Sources */,
 				933E23D22A97DDA10047DB04 /* QRCodeScanViewModel.swift in Sources */,
 				933E23D02A97DD760047DB04 /* QRCodeScanView.swift in Sources */,
 				933E23D42A97DE8A0047DB04 /* QRScanFrameManager.swift in Sources */,

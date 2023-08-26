@@ -68,6 +68,9 @@ extension QRScanFrameManager: AVCaptureMetadataOutputObjectsDelegate {
         print(code)
         if qrScannedCode != code {
             qrScannedCode = code
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: .showQRCodeValue, object: nil, userInfo: [NotificationData.qrCodeValue: self.qrScannedCode])
+            }
         }
     }
 }
